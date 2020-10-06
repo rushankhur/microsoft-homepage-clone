@@ -8,6 +8,10 @@
     <title>Microsoft Official Homepage</title>
 </head>
 <body>
+    <!-- Hamburger menu -->
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
     
     <div class="container">
         <!-- Nav -->
@@ -221,7 +225,7 @@
     </section>
    
     <!-- Footer -->
-    <footer class="main-footer">
+    <footer class="footer">
         <div class="footer-inner">
             <div>
                 <i class="fas fa-globe fa-2x"></i> English (United States)
@@ -239,5 +243,10 @@
           </div>
     </footer>
 
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const mainMenu = document.querySelector('.main-menu')
+        menuBtn.addEventListener('click', () => mainMenu.classList.toggle('show'));
+    </script>
 </body>
 </html>
